@@ -3,7 +3,8 @@ import openai
 import os
 
 # Set your OpenAI API Key
-openai.api_key = st.secrets["openai_api_key"]
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 st.title("Chat with OpenAI")
 
